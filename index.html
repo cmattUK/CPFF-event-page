@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contender CPFF 2021</title>
+    <link rel="stylesheet" href="contenderbuils.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5c413a0e1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <style>
+     .before{
+      left:-100%;
+      transition: left 0.2s ease-in-out;
+
+     }
+      .moved {
+      left:0;
+    }
+  
+    .clipImage{
+      clip-path: polygon(
+      0% 100px,                 /* top left */
+      100px 0%,                 /* top left */
+      calc(100% - 0px) 0%,    /* top right */
+      100% 0px,               /* top right */
+      100% calc(100% - 0px),  /* bottom right */
+      calc(100% - 0px) 100%,  /* bottom right */
+      0px 100%,               /* bottom left */
+      0 calc(100% - 0px)      /* bottom left */
+      );
+    }
+
+    .clipDown{
+      clip-path: polygon(0 0, 100% 0, 100% 78%, 75% 100%, 0 100%, 0% 50%);
+    }
+
+    .tinted-image {
+    background: 
+    url(img/Fight-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+   </style>
+
+</head>
+<body>
+
+<header id="fullMenu" class="sticky top-0 z-40">
+<!-- This example requires Tailwind CSS v2.0+ -->
+
+<div class="bg-transparent navBack overflow-hidden">
+  <div class="container  mx-auto px-6">
+    <div class="flex justify-between items-center  py-6 ">
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        
+          <span class="sr-only">CPFF 37</span>
+          <img class="h-12 w-auto " src="img/logo.png" alt="CPFF logo">
+        
+      </div>
+      <div class="-mr-2 -my-2 md:hidden">
+        <button type="button" id="pillBar" class=" p-2 inline-flex items-center justify-center text-white hover:text-gray-300  focus:outline-none focus:ring-2  focus:ring-yellow-500" aria-expanded="false">
+          <span class="sr-only">Open menu</span>
+          <!-- Heroicon name: outline/menu -->
+          <i class="fas fa-bars text-3xl"></i>
+         
+        </button>
+      </div>
+      <nav class="hidden md:flex space-x-10 uppercase text-sm" id="mainNav">
+     
+
+        <a href="#about" class=" font-medium text-white hover:text-yellow-500  my-4 ">
+          About
+        </a>
+        <a href="#tournament" class=" font-medium text-white hover:text-yellow-500  my-4 ">
+          Tournament
+        </a>
+
+        <a href="#fighters" class=" font-medium text-white hover:text-yellow-500  my-4 ">
+          Fighters
+        </a>
+
+        <a href="#contact" class=" font-medium text-white hover:text-yellow-500  my-4 ">
+          Contact
+        </a>
+
+        <a href="#tickets" class="inline-block  px-4 md:px-6 bg-yellow-500 mb-4 mt-2 py-2 text-black hover:bg-yellow-300 uppercase font-bold">
+          Get Tickets
+        </a>
+      </nav>
+
+    </div>
+  </div>
+
+  <!--
+    Mobile menu, show/hide based on mobile menu state.
+
+    Entering: "duration-200 ease-out"
+      From: "opacity-0 scale-95"
+      To: "opacity-100 scale-100"
+    Leaving: "duration-100 ease-in"
+      From: "opacity-100 scale-100"
+      To: "opacity-0 scale-95"
+  -->
+  <div class="absolute top-0 menuSlide  w-screen h-screen lg:hidden before">
+    <div class=" bg-black">
+      <div class="pt-5 pb-6 px-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="h-12 w-auto " src="img/logo.png" alt="CPFF logo">
+          </div>
+          <div class="-mr-2 bg-black" id="closeMenu">
+            <button type="button"  class=" p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x -->
+              <i class="fas fa-times text-xl"></i>
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="  h-screen bg-white text-center ">
+        <div class=" uppercase text-xs">
+          <a href="#about" class=" font-medium text-gray-900 hover:text-yellow-500 block py-4 js-scroll-trigger">
+            About
+          </a>
+
+          <a href="#tournament" class=" font-medium text-gray-900 hover:text-yellow-500 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+            Tournament
+          </a>
+
+          <a href="#fighters" class=" font-medium text-gray-900 hover:text-yellow-500 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+            Fighters
+          </a>
+
+          <a href="#tickets" class="font-medium text-gray-900 hover:text-yellow-500 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+            Tickets
+          </a>
+
+          <a href="#contact" class=" font-medium text-gray-900 hover:text-yellow-500 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+            Contact
+          </a>
+
+        </div>
+        <div>
+          <a href="#" class="w-full whitespace-nowrap inline-flex text-base items-center justify-center text-normal px-6 bg-yellow-500 py-4 leading-none text-black hover:bg-yellow-300  text-normal uppercase font-bold">
+            Get Tickets
+          </a>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</header>
+     
+<main>
+    <div class="relative flex items-center  mb-12 overflow-hidden  w-screen z-10 h-5/6  -mt-32 py-60 border-b-4 border-yellow-500">
+        <div class="relative z-30 p-5 md:text-9xl sm:text-7xl text-6xl text-white mx-auto">
+          <h1 class="font-extrabold text-center"><span class=" uppercase text-2xl md:text-5xl text-white text-center text-yellow-500 items-center font-bold block pb-6">November 27, 2022</span>CPFF 37</h1>
+          <div class="flex flex-wrap justify-center  pt-6 uppercase">
+              <!---<div class=" text-base md:text-xl px-2"><i class="fas fa-calendar text-yellow-500 mr-1"></i> The Hub 
+                , Teesside University </div>--->
+              <div class=" text-xs md:text-xl px-2 pb-1 md:pb-0"><i class="fas fa-building text-yellow-500 mr-1"></i> The Hub, 
+                Teesside University </div>
+              <div class=" text-xs md:text-xl px-2"><i class="fas fa-map-signs text-yellow-500 "></i> Middlesbrough</div> 
+              <div class=" text-xs md:text-xl px-2"><i class="fas fa-map-marker-alt text-yellow-500 "></i> TS1 3BA</div> 
+             
+          </div>
+
+          <p class="text-center md:-mt-12"><a href="#" class="inline-block text-base px-4 md:px-6 bg-yellow-500 mt-6 py-2 text-black hover:bg-yellow-300 uppercase font-bold">
+                Get Tickets
+            </a>
+          </p>
+        </div>
+        
+        <video id="myVideo" webkit-playsinline playsinline autoplay loop muted preload="auto" class="hidden md:block lg:block xl:block absolute z-10 w-auto min-w-full min-h-full max-w-none filter brightness-30 saturate-0">
+          <source src="video/Contendertestsmall.webm" type="video/webm"/>
+          <source src="video/vid.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="absolute z-10 w-auto min-w-full min-h-full max-w-none filter brightness-30 saturate-50 bg-no-repeat bg-cover bg-center sm:block md:hidden lg:hidden xl:hidden" style="background-image: url(img/Fight\ 1.jpg);">
+
+        </div>
+    </div>
+    <!--
+<section class="timer">
+  <div class="relative z-30  mx-auto text-white -mt-28 lg:container text-center uppercase text-center tracking-widest md:px-6 px-0  md:w-full ">
+      <div class=" flex bg-black lg:justify-center justify-between  py-6 mx-auto px-6 border-4 border-yellow-500 lg:w-5/6 xl:w-4/6 2xl:w-3/6 sm:w-full">
+        <div><p id="days" class="lg:text-5xl md:text-4xl text-3xl md:px-6 font-bold ">72</p></div>
+        <div><p  class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal  md:leading-relaxed ">|</p></div>
+        <div><p  id="hours" class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">102</p></div>
+        <div><p class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal   md:leading-relaxed">|</p></div>
+        <div><p id ="minutes"class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">53</p></div>
+        <div><p class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal   md:leading-relaxed">|</p></div>
+        <div><p id="seconds"class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">20</p></div>
+      </div>
+    </div>
+</section>
+--->
+
+    
+<section class="About" id="about">
+    <div class="relative z-30  mx-auto mt-16 mb-12  container  text-center  flex items-center flex-col lg:flex-row px-6 border-white">
+      <div class="text-left text-normal lg:flex-1 lg:pr-20 pb-6 order-2 lg:order-1">
+        <h2 class="text-3xl pb-4 font-bold uppercase "><span class="block text-lg text-gray-500 font-normal tracking-widest pb-4">About</span>Contender Promotions Fight Federation</h2>
+        <p class="text-gray-500 ">The most exciting kickboxing event in the UK CPFF 37 returns  December 5th One night two tournaments including a 
+          heavyweight contender champion vs champion 4 man Tournament with some of the best fighters taking part from around the UK and all 4 fighters are a 
+          champions in an organisation only one can be crowned the CPFF champion tournament fights will be 3 rounds but if a draw after 3 will go to a sudden death round.</p>
+      
+        <ul class="pt-6 text-black">
+          <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+          <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+          <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+          <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+          <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+
+        </ul>
+       
+      </div>
+      <div class="text-left lg:flex-1 order-1 lg:order-2 flex items-center">
+        
+      <img class="shadow-lg mx-auto mh-auto shadow clipImage mb-6  "  src="img/Fight-5.jpg">
+      
+      </div>
+    
+
+  </div>
+</section>
+
+
+<section class="tournamentFeatures bg-black  pt-12 pb-12" id="tournament"> 
+  <div class="relative z-30 mx-auto container  text-left   ">
+      <ul class="py-6 text-white flex justify-between flex-col lg:flex-row px-6 ">
+        <li class="border-4 border-transparent  mr-0 lg:mr-6 ml-0 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3 ">
+          
+          <div>
+          <h3 class="text-2xl pb-4 font-bold uppercase my-auto lg:items-center  pb-0 ">Why choose CPFF 37?</h3>
+          <p >In an effort to deliver the most explosive technical combat CPFF 37 will feature:</p>
+        </div>
+        
+        </li>
+        <li class="border-t-4 lg:border-4 border-yellow-500  mx-0 lg:mx-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
+          <div>
+            <i class="fas fa-users  text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
+          </div>
+          <div>
+          <h3 class="text-2xl pb-4 font-bold uppercase my-auto items-center"> 4-man Tournaments</h3>
+          <p >Featuring both heavyweight and 73KG weight classes.</p>
+        </div>
+        
+        </li>
+        <li class="border-t-4 lg:border-4 border-yellow-500   ml-0 lg:ml-6 p-6 flex justify-between flex-col lg:flex-row items-start lg:items-center lg:w-1/3">
+          <div>
+            <i class="fas fa-bell text-5xl  mr-6 my-auto pb-6 lg:-b-0  "></i>
+          </div>
+          <div>
+          <h3 class="text-2xl pb-4 font-bold uppercase my-auto items-center"> 6oz gloves fights </h3>
+          <p>New boxing rules using 6oz gloves. These exciting fights will be in 3 x 3min rounds. 
+            
+            </p>
+        </div>
+        
+        </li>
+      </ul>
+
+      <ul class="py-6 text-white flex justify-between flex-col lg:flex-row px-6 ">
+        <li class="border-t-4 lg:border-4 border-yellow-500  ml-0 mr-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
+          <div>
+            <i class="fas fa-users text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
+          </div>
+          <div>
+          <h3 class="text-2xl pb-4 font-bold uppercase my-auto items-center">Sudden Death Rounds</h3>
+          <p>Champion Tournament fights will be 3 rounds but a 'draw' will trigger a sudden death round.</p>
+        </div>
+        
+        </li>
+        <li class="border-t-4 lg:border-4 border-yellow-500  mx-0 lg:mx-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
+          <div>
+            <i class="fas fa-trophy text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
+          </div>
+          <div>
+          <h3 class="text-2xl pb-4 font-bold uppercase my-auto items-center">Champ Vs Champ</h3>
+          <p >Our 73KG tournament will feature top level semi-pro champions battling to prove themselves.</p>
+        </div>
+        
+        </li>
+        <li class="border-t-4 lg:border-4 border-yellow-500   ml-0 lg:ml-6 p-6 flex justify-between flex-col lg:flex-row items-start lg:items-center lg:w-1/3">
+          <div>
+            <i class="fas fa-trophy text-5xl  mr-6 my-auto pb-6 lg:-b-0  "></i>
+          </div>
+          <div>
+          <h3 class="text-2xl pb-4 font-bold uppercase my-auto items-center"> Exciting Undercard </h3>
+          <p>As usual CPFF will showcase electric bouts from impressive new talent.
+            
+            </p>
+        </div>
+        
+        </li>
+      </ul>
+
+    </div>
+</section>
+
+<section class="Fighters  px-6 pt-12" id="fighters">
+  <div class=" mx-auto container  text-center h-full  p-6  mb-12">
+    <h2 class="text-3xl pb-4 font-bold uppercase text-center"><span class="block text-lg text-gray-500 font-normal tracking-widest pb-4">Meet the</span>Fighters</h2>
+
+    <ul class=" pt-6 text-white flex justify-between flex-col sm:flex-row flex-wrap" >
+
+      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+        <div class="relative lg:flex lg:items-stretch overflow-hidden">
+        <div class="z-10 ">
+          <img src="img/fighter.jpg">
+        </div>
+        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+        </div>
+        </div> 
+      </li>
+
+      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+        <div class="relative lg:flex lg:items-stretch overflow-hidden">
+        <div class="z-10 ">
+          <img src="img/fighter.jpg">
+        </div>
+        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+        </div>
+        </div> 
+      </li>
+
+      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+        <div class="relative lg:flex lg:items-stretch overflow-hidden">
+        <div class="z-10 ">
+          <img src="img/fighter.jpg">
+        </div>
+        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+        </div>
+        </div> 
+      </li>
+
+      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+        <div class="relative lg:flex lg:items-stretch overflow-hidden">
+        <div class="z-10 ">
+          <img src="img/fighter.jpg">
+        </div>
+        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+        </div>
+        </div> 
+      </li>
+      </ul>
+
+
+      <ul class=" pt-6 text-white flex justify-between flex-col sm:flex-row flex-wrap" >
+        <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+          <div class="relative lg:flex lg:items-stretch overflow-hidden">
+          <div class="z-10 ">
+            <img src="img/fighter.jpg">
+          </div>
+          <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+            <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+          </div>
+          </div> 
+        </li>
+  
+        <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+          <div class="relative lg:flex lg:items-stretch overflow-hidden">
+          <div class="z-10 ">
+            <img src="img/fighter.jpg">
+          </div>
+          <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+            <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+          </div>
+          </div> 
+        </li>
+  
+        <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+          <div class="relative lg:flex lg:items-stretch overflow-hidden">
+          <div class="z-10 ">
+            <img src="img/fighter.jpg">
+          </div>
+          <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+            <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+          </div>
+          </div> 
+        </li>
+  
+        <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+          <div class="relative lg:flex lg:items-stretch overflow-hidden">
+          <div class="z-10 ">
+            <img src="img/fighter.jpg">
+          </div>
+          <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-500  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+            <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Name Here<span class="block text-sm normal-case font-normal">Soem profile text goes here</span></p>
+          </div>
+          </div> 
+        </li>
+        </ul>
+    </div>
+</section>
+
+<section class="Tickets px-6 pt-12 pb-6 tinted-image " id="tickets">
+  <div class=" mx-auto container   h-full  p-6  ">
+    <h2 class="text-3xl pb-4 font-bold uppercase text-center"><span class=" text-center block text-lg text-black font-normal tracking-widest pb-4">Get your</span>Tickets</h2>
+
+    <ul class="text-white flex  justify-center flex-col md:flex-row flex-wrap pt-6" >
+      <li class="w-full text-black  overflow-visible flex items-stretch flex-col md:px-6 transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12  ">
+        <div class="bg-white">
+        <div class="border-b border-yellow-500 py-12 pb-6 z-10">
+        <div class="self-center">
+          <p class="uppercase text-center font-semibold"><i class="far fa-star"></i> Standard<span class="mt-3 block text-5xl font-extrabold">£30 </span></p>
+        </div>
+        <div class="self-center">
+          <p class="normal-case" >
+            <ul class="text-center text-sm pt-6 ">
+              <li>Entrance</li>
+              <li>Free Lunch & Snacks</li>
+              <li>Posters Session</li>
+              <li>Talk to the Editors Session</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+        <div class="pb-12">
+          <p class="text-center"><a href="#" class="inline-block text-base px-4 md:px-6 bg-yellow-500 mt-6 py-2 text-black hover:bg-yellow-300 uppercase font-bold">
+            Get Ticket
+        </a>
+      </p>
+    </div>
+  </div>
+      </li>
+
+      
+      <li class="w-full text-black  overflow-visible flex items-stretch flex-col md:px-6 transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12   ">
+        <div class="bg-white">
+        <div class="border-b border-yellow-500 py-12 pb-6 z-10">
+        <div class="self-center">
+          <p class="uppercase text-center font-semibold"><i class="fas fa-star-half-alt"></i> Outering <span class="mt-3 block text-5xl font-extrabold">£45</span></p>
+        </div>
+        <div class="self-center">
+          <p class="normal-case" >
+            <ul class="text-center text-sm pt-6 ">
+              <li>Entrance</li>
+              <li>Free Lunch & Snacks</li>
+              <li>Posters Session</li>
+              <li>Talk to the Editors Session</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+        <div class="pb-12">
+          <p class="text-center"><a href="#" class="inline-block text-base px-4 md:px-6 bg-yellow-500 mt-6 py-2 text-black hover:bg-yellow-300 uppercase font-bold">
+            Get Ticket
+        </a>
+      </p>
+    </div>
+  </div>
+      </li>
+
+      <li class="w-full text-black  overflow-visible flex items-stretch flex-col md:px-6 transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12   ">
+        <div class="bg-white">
+        <div class="border-b border-yellow-500 py-12 pb-6 z-10">
+        <div class="self-center">
+          <p class="uppercase text-center font-semibold"><i class="fas fa-star"></i> Ringside <span class="mt-3 block text-5xl font-extrabold">£50</span></p>
+        </div>
+        <div class="self-center">
+          <p class="normal-case" >
+            <ul class="text-center text-sm pt-6 ">
+              <li>Entrance</li>
+              <li>Free Lunch & Snacks</li>
+              <li>Posters Session</li>
+              <li>Talk to the Editors Session</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+        <div class="pb-12">
+          <p class="text-center"><a href="#" class="inline-block text-base px-4 md:px-6 bg-yellow-500 mt-6 py-2 text-black hover:bg-yellow-300 uppercase font-bold">
+            Get Ticket
+        </a>
+      </p>
+    </div>
+  </div>
+      </li>
+
+      
+      <li class="w-full text-black  overflow-visible flex items-stretch flex-col md:px-6 transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12   ">
+        <div class="bg-white">
+        <div class="border-b border-yellow-500 py-12 pb-6 z-10">
+        <div class="self-center">
+          <p class="uppercase text-center font-semibold"><i class="fas fa-star"></i> Ringside <span class="mt-3 block text-5xl font-extrabold">£50</span></p>
+        </div>
+        <div class="self-center">
+          <p class="normal-case" >
+            <ul class="text-center text-sm pt-6 ">
+              <li>Entrance</li>
+              <li>Free Lunch & Snacks</li>
+              <li>Posters Session</li>
+              <li>Talk to the Editors Session</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+        <div class="pb-12">
+          <p class="text-center"><a href="#" class="inline-block text-base px-4 md:px-6 bg-yellow-500 mt-6 py-2 text-black hover:bg-yellow-300 uppercase font-bold">
+            Get Ticket
+        </a>
+      </p>
+    </div>
+  </div>
+      </li>
+</ul>
+    </div>
+</section>
+
+<section class="contact bg-gray-100  pt-16 pb-20" id="contact">
+  
+  <h2 class="text-3xl pb-6 font-bold uppercase text-center"><span class=" text-center block text-lg text-gray-500 font-normal tracking-widest pb-4">Got a question?</span>Contact us</h2>
+  <div class=" text-left flex flex-col md:flex-row justify-center mx-auto container px-6 pt-3">
+    
+    
+    <div class="bg-black p-12 flex items-center text-white  flex-none md:w-5/12 bg-no-repeat bg-cover bg-center filter grayscale " style=" background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Fight\ 3.jpg);">
+      <div class="flex flex-col">
+      <i class="fas fa-comment-dots text-7xl self-center p-6 border-4 border-white mb-6"></i>
+      
+      <p class="self-center text-center  text-sm lg:text-3xl font-bold uppercase ">Got a question<span class="block text-sm normal-case font-normal pt-6">Quisque varius vitae urna nec interdum. Sed a erat mollis, tempus odio ornare, aliquam felis. 
+        <strong class="block lg:text-xl">Email: <a href="mailto:garry@cpff.co.uk" class="underline"><span class="font-normal">garry@cpff.co.uk </span></a></strong></span></p>
+         <ul class="flex justify-center mx-auto pt-3">
+          <a href="" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-facebook-square"></i></li></a>
+          <a href="" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-instagram"></i></li></a>
+          <a href="" class=" hover:bg-gray-700 mx-0 px-3 py-2"><li class="self-center"><i class="fab fa-youtube"></i></li></a>
+        </ul>
+    </div>
+      </div>
+
+    <div class="bg-white p-12 flex-grow" id="contactTop">
+      <div id="errorMsg"></div>
+<form class="self-stretch overflow-hidden" action="code/contact_code.php" method="POST" id="cpffContact">
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3  md:mb-0">
+
+      <p class="text-xs mb-3">* Required</p>
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        Full name*
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " id="name" name="name" type="text" placeholder="John Smith">
+    </div>
+ 
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+        Email*
+      </label>
+      <input type="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " id="mail" name="mail" placeholder="email@mail.com">
+      
+      
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-2">
+    <div class="w-full  px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+        Message*
+      </label>
+      <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " placeholder="Type your message" id="msg" name="msg" rows="4" cols="50"></textarea>
+     
+    </div>
+
+  
+    <p class="float-right"><button type="submit" class="inline-block text-base px-4 md:px-6 bg-yellow-500 ml-3 mt-6 py-2 text-black hover:bg-yellow-300 uppercase font-bold" name="submit" id="submit">
+      Send Message
+    </button>
+</p>
+  </div>
+</form>
+</div>
+
+</div>
+
+</section>
+
+<section class="Sponsors px-6 pt-12 pb-6 bg-white " >
+  <div class=" mx-auto container  h-full  p-6  ">
+    <h2 class="text-3xl pb-4 font-bold uppercase text-center"><span class=" text-center block text-lg text-gray-500 font-normal tracking-widest pb-4">Our event</span>Sponsors</h2>
+
+    <ul class="text-white flex  justify-center flex-row pt-6 flex-wrap" >
+
+      <a href="#" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
+        <li class=" border border-gray-100 text-black flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2">
+        <img src="img/sponsors/jabcrosshook.png" class="filter grayscale p-6 hover:bg-gray-100">
+        </li>
+      </a>
+
+      <a href="#" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
+        <li class=" border border-gray-100 text-black  flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2  ">
+        <img src="img/sponsors/jabcrosshook.png" class="filter grayscale p-6 hover:bg-gray-100">
+        </li>
+      </a> 
+
+      <a href="#" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
+        <li class=" border border-gray-100 text-black  flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2  ">
+        <img src="img/sponsors/jabcrosshook.png" class="filter grayscale p-6 hover:bg-gray-100">
+        </li>
+      </a> 
+</ul>
+    </div>
+</section>
+
+<footer class=" pt-16 pb-12 bg-black text-white relative text-center">
+  <div class="px-6 container mx-auto">
+  <div class="text-white  md:flex-row ">
+    <div class=" px-6">
+    <p class="text-xs font-semibold uppercase ">&copy; Contender Promotions Fight Federation 2021 <span class="normal-case font-medium pt-3 block">The Basement<br>
+      Stockton-on-Tees<br>
+      TS18 3DR <br>
+      <a href="mailto:" class="underline"><i class="far fa-envelope mr-1"></i>  garry@cpff.co.uk</a> <br>
+      <!---<i class="fas fa-phone-alt mr-1"></i> 07825184659<br>--->
+    </span>
+      </p>
+    
+  </div>
+  <div class="px-6">
+    <ul class="flex justify-center mx-auto pt-3">
+      <a href="" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-facebook-square"></i></li></a>
+      <a href="" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-instagram"></i></li></a>
+      <a href="" class=" hover:bg-gray-700 mx-0 px-3 py-2"><li class="self-center"><i class="fab fa-youtube"></i></li></a>
+    </ul>
+  </div>
+  </div>
+  </div>
+ </footer>
+
+
+</main>
+<script src="js/menu.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/validation.js"></script>
+
+</body>
+</html>

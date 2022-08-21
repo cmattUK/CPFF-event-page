@@ -1,0 +1,102 @@
+[24-Jun-2021 18:02:32 UTC] PHP Parse error:  syntax error, unexpected variable "$mailTo" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[24-Jun-2021 18:03:17 UTC] PHP Parse error:  syntax error, unexpected variable "$mailTo" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[24-Jun-2021 18:46:54 UTC] PHP Parse error:  syntax error, unexpected variable "$mailTo" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[24-Jun-2021 19:34:29 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 30
+[24-Jun-2021 19:39:28 UTC] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 23
+[25-Jun-2021 18:24:26 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function emptyInputSignup(), 3 passed in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 20 and exactly 5 expected in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php:3
+Stack trace:
+#0 /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php(20): emptyInputSignup()
+#1 {main}
+  thrown in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 3
+[25-Jun-2021 18:25:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function emptyInputSignup(), 3 passed in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 20 and exactly 5 expected in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php:3
+Stack trace:
+#0 /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php(20): emptyInputSignup()
+#1 {main}
+  thrown in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 3
+[25-Jun-2021 18:26:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function emptyInputSignup(), 3 passed in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 20 and exactly 5 expected in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php:3
+Stack trace:
+#0 /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php(20): emptyInputSignup()
+#1 {main}
+  thrown in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 3
+[25-Jun-2021 18:38:02 UTC] PHP Parse error:  Unclosed '{' on line 4 in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 33
+[25-Jun-2021 18:38:30 UTC] PHP Parse error:  Unclosed '{' on line 4 in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 33
+[25-Jun-2021 18:38:32 UTC] PHP Parse error:  Unclosed '{' on line 4 in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 33
+[25-Jun-2021 18:38:46 UTC] PHP Parse error:  Unclosed '{' on line 4 in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 33
+[25-Jun-2021 18:39:07 UTC] PHP Warning:  Undefined variable $result in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[25-Jun-2021 18:39:32 UTC] PHP Warning:  Undefined variable $result in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[25-Jun-2021 18:39:53 UTC] PHP Warning:  Undefined variable $result in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[25-Jun-2021 18:47:49 UTC] PHP Warning:  Undefined variable $From in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 21
+[25-Jun-2021 19:02:58 UTC] PHP Parse error:  syntax error, unexpected token "exit", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 47
+[25-Jun-2021 19:38:01 UTC] PHP Warning:  Undefined array key "From" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 6
+[25-Jun-2021 19:38:01 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 7
+[25-Jun-2021 19:40:11 UTC] PHP Warning:  Undefined array key "From" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 6
+[25-Jun-2021 19:40:11 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 7
+[25-Jun-2021 19:45:49 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "</h1>", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[25-Jun-2021 19:46:33 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "</h1>", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[25-Jun-2021 19:53:32 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "\n\n", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[25-Jun-2021 19:53:58 UTC] PHP Parse error:  syntax error, unexpected double-quoted string ".\n\n", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[25-Jun-2021 19:55:21 UTC] PHP Parse error:  syntax error, unexpected double-quoted string ".\n\n", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 9
+[25-Jun-2021 20:20:15 UTC] PHP Parse error:  syntax error, unexpected token "{" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 5
+[25-Jun-2021 20:22:09 UTC] PHP Parse error:  syntax error, unexpected variable "$errorNum", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 23
+[25-Jun-2021 20:22:48 UTC] PHP Warning:  Undefined variable $name in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 21
+[25-Jun-2021 20:22:48 UTC] PHP Warning:  Undefined variable $From in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 21
+[25-Jun-2021 20:22:48 UTC] PHP Warning:  Undefined variable $message in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 21
+[25-Jun-2021 20:22:48 UTC] PHP Warning:  Undefined variable $errorNum in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 23
+[25-Jun-2021 20:23:48 UTC] PHP Warning:  Undefined variable $errorNum in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 29
+[25-Jun-2021 20:25:22 UTC] PHP Warning:  Undefined variable $errorNum in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 30
+[25-Jun-2021 20:25:52 UTC] PHP Warning:  Undefined variable $errorNum in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 30
+[25-Jun-2021 20:28:19 UTC] PHP Warning:  Undefined variable $errorNum in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 30
+[25-Jun-2021 20:28:37 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "</h1>", expecting "," or ";" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 33
+[06-Jul-2021 18:01:13 UTC] PHP Warning:  Undefined array key "name" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:01:13 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:01:13 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 13
+[06-Jul-2021 18:12:55 UTC] PHP Warning:  Undefined array key "name" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:12:55 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:12:55 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 13
+[06-Jul-2021 18:19:47 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:19:47 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 13
+[06-Jul-2021 18:22:05 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:22:05 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:22:15 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:22:15 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:23:16 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:23:16 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:23:34 UTC] PHP Warning:  Undefined array key "name" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 18:23:34 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:23:34 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:25:07 UTC] PHP Warning:  Undefined array key "name" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 18:25:07 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:25:07 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:25:40 UTC] PHP Warning:  Undefined array key "name" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 18:25:40 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 18:25:40 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 12
+[06-Jul-2021 18:42:05 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 13
+[06-Jul-2021 18:42:05 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 14
+[06-Jul-2021 18:45:59 UTC] PHP Warning:  Undefined variable $email in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 42
+[06-Jul-2021 18:47:49 UTC] PHP Warning:  Undefined array key "mail" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 29
+[06-Jul-2021 18:47:49 UTC] PHP Warning:  Undefined array key "msg" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 30
+[06-Jul-2021 18:50:03 UTC] PHP Warning:  Undefined array key "mail" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 29
+[06-Jul-2021 18:50:03 UTC] PHP Warning:  Undefined array key "msg" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 30
+[06-Jul-2021 18:50:55 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 13
+[06-Jul-2021 18:52:02 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 13
+[06-Jul-2021 18:57:06 UTC] PHP Warning:  Undefined array key "From" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 18:57:43 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 18:58:36 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 19:00:04 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 19:16:27 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 60
+[06-Jul-2021 19:46:05 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 19:46:05 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[06-Jul-2021 19:49:41 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 47
+[06-Jul-2021 19:50:50 UTC] PHP Parse error:  syntax error, unexpected token "." in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 47
+[06-Jul-2021 20:06:03 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[06-Jul-2021 20:06:03 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[07-Jul-2021 18:05:15 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[07-Jul-2021 18:05:15 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[07-Jul-2021 18:05:35 UTC] PHP Warning:  Undefined array key "email" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 10
+[07-Jul-2021 18:05:35 UTC] PHP Warning:  Undefined array key "message" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 11
+[07-Jul-2021 18:06:39 UTC] PHP Parse error:  syntax error, unexpected token "<" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 55
+[07-Jul-2021 18:07:42 UTC] PHP Parse error:  syntax error, unexpected token "<" in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 55
+[07-Jul-2021 19:48:53 UTC] PHP Warning:  Undefined variable $mailFalseEmpty in /home/i32n3yps3s6r/public_html/cpff/code/contact_code.php on line 40
