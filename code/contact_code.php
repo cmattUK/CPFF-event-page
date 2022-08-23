@@ -5,7 +5,9 @@
     $msgEmpty = false;
     $mailFalse = false;
     $errorMsg = false;
+    $alias = false;
 
+    $aliasName = $_POST['alias'];
     $name = $_POST['name'];
     $From = $_POST['email'];
     $message = $_POST['message'];
@@ -23,6 +25,9 @@
         }
         return $result;
     }
+    if(isset($aliasName)){
+        alias = true;
+    }
 
     if(empty($nameClean)){
         $nameEmpty = true;
@@ -39,10 +44,10 @@
         $mailFalse = true;
     }
 
-    if(($nameEmpty== false) && ($mailEmpty== false) && ($msgEmpty== false) && ($mailFalse== false) ){
+    if((($nameEmpty== false) && ($mailEmpty== false) && ($msgEmpty== false) && ($mailFalse== false)) && ($alias== false)){
         
         $to = "mathin2@hotmail.com";
-        $subject = "CPFF Enquiry";
+        $subject = "CPFF 37 Enquiry";
         $txt = "Contender, you have an email from ".$name.".\n\n".$message;
         $headers = "From: ".$From;
         mail($to,$subject,$txt,$headers);
@@ -137,5 +142,3 @@
     }
 
     </script>
-   
-
