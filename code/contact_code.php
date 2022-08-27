@@ -45,8 +45,7 @@
     }
 
     if((($nameEmpty== false) && ($mailEmpty== false) && ($msgEmpty== false) && ($mailFalse== false)) && ($alias== false)){
-        
-        $to = "mathin2@hotmail.com";
+        $to = "mathin2@hotmail.com", "garry@cpff.ac.uk";
         $subject = "CPFF 37 Enquiry";
         $txt = "Contender, you have an email from ".$name.".\n\n".$message;
         $headers = "From: ".$From;
@@ -55,7 +54,6 @@
         echo "<p class='bg-green-500 p-6 mb-4 text-lg font-bold uppercase'><i class='far fa-check-circle'></i> Message sent!<span class='block text-white text-sm'> We'll be in touch shortly.</span></p>";
     }
     ?>
-
     <script>
 
         function scrollTopAnimated() {
