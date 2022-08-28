@@ -18,7 +18,6 @@
       .before{
         left:-100%;
         transition: left 0.2s ease-in-out;
-
       }
         .moved {
         left:0;
@@ -47,516 +46,506 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      
   }
 
     </style>
   </head>
-<body>
+  <body>
 
-<header id="fullMenu" class="sticky top-0 z-40">
-  <div class="bg-transparent navBack overflow-hidden">
-    <div class="container  mx-auto px-6 font-serif">
-      <div class="flex justify-between items-center  py-6 ">
-        <div class="flex justify-start lg:w-0 lg:flex-1">
-            <span class="sr-only">CPFF 37</span>
-            <img class="w-auto h-12" src="img/logo.png"  alt="CPFF logo">
-        </div>
-        <div class="-mr-2 -my-2 md:hidden font-sans">
-          <button type="button" id="pillBar" class=" p-2 inline-flex items-center justify-center text-white hover:text-gray-300  focus:outline-none focus:ring-2  focus:ring-yellow-400" aria-expanded="false">
-            <span class="sr-only">Open menu</span>
-            <!-- Heroicon name: outline/menu -->
-            <i class="fas fa-bars text-3xl"></i>
-          </button>
-        </div>
-        <nav class="hidden md:flex space-x-10 uppercase text-sm font-sans" id="mainNav">
-          <a href="#about" class=" font-medium text-white hover:text-yellow-400 my-4">
-            About
-          </a>
-          <a href="#tournament" class=" font-medium text-white hover:text-yellow-400 my-4">
-            Why CPFF?
-          </a>
-          <a href="#fighters" class=" font-medium text-white hover:text-yellow-400 my-4">
-            Fighters
-          </a>
-          <a href="#contact" class=" font-medium text-white hover:text-yellow-400 my-4">
-            Contact
-          </a>
-          <a href="#sponsors" class="font-medium text-white hover:text-yellow-400 my-4">
-            Sponsors
-          </a>
-          <a href="#tickets" class="inline-block  px-4 md:px-6 bg-yellow-400 mb-4 mt-2 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
-            <i class="fa-solid fa-envelope"></i> Enquiries
-          </a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="absolute top-0 menuSlide  w-screen h-screen lg:hidden before">
-      <div class=" bg-black">
-        <div class="pt-5 pb-6 px-6">
-          <div class="flex items-center justify-between">
-            <div>
-              <img class="h-12 w-auto " src="img/logo.png" alt="CPFF logo">
+    <header id="fullMenu" class="sticky top-0 z-40">
+      <div class="bg-transparent navBack overflow-hidden">
+        <div class="container  mx-auto px-6 font-serif">
+          <div class="flex justify-between items-center  py-6 ">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <span class="sr-only">CPFF 37</span>
+                <img class="w-auto h-12" src="img/logo.png"  alt="CPFF logo">
             </div>
-            <div class="-mr-2 bg-black" id="closeMenu">
-              <button type="button"  class=" p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-400">
-                <span class="sr-only">Close menu</span>
-                <!-- Heroicon name: outline/x -->
-                <i class="fas fa-times text-xl"></i>
+            <div class="-mr-2 -my-2 md:hidden font-sans">
+              <button type="button" id="pillBar" class=" p-2 inline-flex items-center justify-center text-white hover:text-gray-300  focus:outline-none focus:ring-2  focus:ring-yellow-400" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <!-- Heroicon name: outline/menu -->
+                <i class="fas fa-bars text-3xl"></i>
               </button>
             </div>
+            <nav class="hidden md:flex space-x-10 uppercase text-sm font-sans" id="mainNav">
+              <a href="#about" class=" font-medium text-white hover:text-yellow-400 my-4">
+                About
+              </a>
+              <a href="#tournament" class=" font-medium text-white hover:text-yellow-400 my-4">
+                Why CPFF?
+              </a>
+              <a href="#fighters" class=" font-medium text-white hover:text-yellow-400 my-4">
+                Fighters
+              </a>
+              <a href="#contact" class=" font-medium text-white hover:text-yellow-400 my-4">
+                Contact
+              </a>
+              <a href="#sponsors" class="font-medium text-white hover:text-yellow-400 my-4">
+                Sponsors
+              </a>
+              <a href="#tickets" class="inline-block  px-4 md:px-6 bg-yellow-400 mb-4 mt-2 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
+                How to watch
+              </a>
+            </nav>
           </div>
         </div>
-        <div class="h-screen bg-white text-center ">
-          <div class=" uppercase text-xs">
-            <a href="#about" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 js-scroll-trigger">
-              About
-            </a>
-            <a href="#tournament" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
-              Why CPFF?
-            </a>
-            <a href="#fighters" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
-              Fighters
-            </a>
-            <a href="#tickets" class="font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
-              Ticket info
-            </a>
-            <a href="#contact" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
-              Contact
-            </a>
-            <a href="#sponsors" class="font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
-              Sponsors
-            </a>
+
+        <div class="absolute top-0 menuSlide  w-screen h-screen lg:hidden before">
+          <div class=" bg-black">
+            <div class="pt-5 pb-6 px-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <img class="h-12 w-auto " src="img/logo.png" alt="CPFF logo">
+                </div>
+                <div class="-mr-2 bg-black" id="closeMenu">
+                  <button type="button"  class=" p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-400">
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x -->
+                    <i class="fas fa-times text-xl"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-screen bg-white text-center ">
+              <div class=" uppercase text-xs">
+                <a href="#about" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 js-scroll-trigger">
+                  About
+                </a>
+                <a href="#tournament" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+                  Why CPFF?
+                </a>
+                <a href="#fighters" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+                  Fighters
+                </a>
+                <a href="#tickets" class="font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+                  How to watch
+                </a>
+                <a href="#contact" class=" font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+                  Contact
+                </a>
+                <a href="#sponsors" class="font-medium text-gray-900 hover:text-yellow-400 block py-4 border-t-2 border-grey-300 js-scroll-trigger">
+                  Sponsors
+                </a>
+              </div>
+              <div>
+                <a href="mailto:garry@cpff.co.uk" class="w-full whitespace-nowrap inline-flex text-base items-center justify-center text-normal px-6 bg-yellow-400 py-4 leading-none text-black hover:bg-yellow-400  text-normal uppercase font-bold">
+                  <i class="fa-solid fa-envelope"></i> Enquiries
+                </a>
+            
+              </div>
+            </div>
           </div>
-          <div>
-            <a href="mailto:garry@cpff.co.uk" class="w-full whitespace-nowrap inline-flex text-base items-center justify-center text-normal px-6 bg-yellow-400 py-4 leading-none text-black hover:bg-yellow-400  text-normal uppercase font-bold">
+        </div>
+      </div>
+    </header>
+        
+    <main>
+        <div class="relative flex items-center mb-12 overflow-hidden w-screen z-10 h-5/6 -mt-32 py-60 border-b-4 border-yellow-400">
+          <div class="relative z-30 p-5 text-white mx-auto">
+            <h1 class="font-extrabold text-center font-bebas text-8xl lg:text-10xl mb-4">
+              <span class="text-4xl lg:text-5xl font-sans uppercase text-white text-center text-yellow-400 items-center font-bold block p-0 mb-4">November 27, 2022</span>CPFF 37</h1>
+              <div class="flex flex-wrap justify-center  pt-0 uppercase ">
+                <div class="text-xs md:text-xl px-2 pb-1 md:pb-0"><i class="fas fa-building text-yellow-400 mr-1"></i> The Hub, 
+                  Teesside University </div>
+                <div class=" text-xs md:text-xl px-2"><i class="fas fa-map-signs text-yellow-400 "></i> Middlesbrough</div> 
+              <div class=" text-xs md:text-xl px-2"><i class="fas fa-map-marker-alt text-yellow-400 "></i> TS1 3BA</div> 
+            </div>
+            <p class="text-center"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-500 uppercase font-bold">
               <i class="fa-solid fa-envelope"></i> Enquiries
-            </a>
-        
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-     
-<main>
-    <div class="relative flex items-center mb-12 overflow-hidden w-screen z-10 h-5/6 -mt-32 py-60 border-b-4 border-yellow-400">
-      <div class="relative z-30 p-5 text-white mx-auto">
-        <h1 class="font-extrabold text-center font-bebas text-8xl lg:text-10xl mb-4">
-          <span class="text-4xl lg:text-5xl font-sans uppercase text-white text-center text-yellow-400 items-center font-bold block p-0 mb-4">November 27, 2022</span>CPFF 37</h1>
-          <div class="flex flex-wrap justify-center  pt-0 uppercase ">
-            <div class="text-xs md:text-xl px-2 pb-1 md:pb-0"><i class="fas fa-building text-yellow-400 mr-1"></i> The Hub, 
-              Teesside University </div>
-            <div class=" text-xs md:text-xl px-2"><i class="fas fa-map-signs text-yellow-400 "></i> Middlesbrough</div> 
-          <div class=" text-xs md:text-xl px-2"><i class="fas fa-map-marker-alt text-yellow-400 "></i> TS1 3BA</div> 
-        </div>
-        <p class="text-center"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-500 uppercase font-bold">
-          <i class="fa-solid fa-envelope"></i> Enquiries
-          </a>
-        </p>
-      </div>
-        
-      <video id="myVideo" webkit-playsinline playsinline autoplay loop muted preload="auto" class="hidden md:block lg:block xl:block absolute z-10 w-auto min-w-full min-h-full max-w-none filter brightness-30 saturate-0">
-        <source src="video/Contendertestsmall.webm" type="video/webm"/>
-        <source src="video/vid.mp4" type="video/mp4"/>
-          Your browser does not support the video tag.
-      </video>
-
-      <div class=" grayscale brightness-25 absolute z-10 w-auto min-w-full min-h-full max-w-none filter brightness-30 saturate-50 bg-no-repeat bg-cover bg-center sm:block md:hidden lg:hidden xl:hidden" style="background-image: url(img/Fight\ 1.jpg);"></div>
-    </div>
-    <!--
-<section class="timer">
-  <div class="relative z-30  mx-auto text-white -mt-28 lg:container text-center uppercase text-center tracking-widest md:px-6 px-0  md:w-full ">
-      <div class=" flex bg-black lg:justify-center justify-between  py-6 mx-auto px-6 border-4 border-yellow-400 lg:w-5/6 xl:w-4/6 2xl:w-3/6 sm:w-full">
-        <div><p id="days" class="lg:text-5xl md:text-4xl text-3xl md:px-6 font-bold ">72</p></div>
-        <div><p  class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal  md:leading-relaxed ">|</p></div>
-        <div><p  id="hours" class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">102</p></div>
-        <div><p class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal   md:leading-relaxed">|</p></div>
-        <div><p id ="minutes"class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">53</p></div>
-        <div><p class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal   md:leading-relaxed">|</p></div>
-        <div><p id="seconds"class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">20</p></div>
-      </div>
-    </div>
-</section>
---->
-
-    
-<section class="About" id="about">
-  <div class="relative z-30  mx-auto mt-16 mb-12  container  text-center  flex items-center flex-col lg:flex-row px-6 border-white">
-    <div class="text-left text-normal lg:flex-1 lg:pr-20 pb-6 order-2 lg:order-1">
-      <h2 class="text-3xl md:text-5xl pb-4 font-bold uppercase font-bebas"><span class="block text-lg text-gray-500 font-normal tracking-widest pb-4">About</span>Contender Promotions Fight Federation</h2>
-      <p class="text-gray-700 ">The most exciting kickboxing event in the UK, CPFF, returns November 27th. One night, two explosive <strong>champion-vs-champion, 4-man, semi-pro tournaments</strong>, each with a £1000 winner-takes-all prize. Every fighter participating will be a UK title holder so you’re sure to see some of the most explosive, bone-crunching combat action.</p> 
-      <p class="text-gray-700 mt-4">Our home-grown talent lights up this electric K-1 spectacle with 6 Contender combatants entering the ring. Headlining the show are our pro fighters including a main event featuring 58 kg superstar <strong>Nathan Dryden</strong> as well as a heavyweight co-main event shining the spotlight on the phenomenal <strong>Kay Szoma</strong>. And, if that's not enough Kickboxing action then we also have <strong>Matt Richardson</strong> battling for glory in the 70 kg tournament, incredible amateur super-fights and an exciting undercard.</p>
-      <p class="text-gray-700 mt-4 ">Finally, for the first time in CPFF history we're showcasing high-level grappling with a  submission-victory-only bout.</p>
-      <!--
-      <ul class="pt-6 text-black">
-        <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
-        <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
-        <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
-        <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
-        <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li
-      </ul>
-      --->
-    </div>
-    <div class="text-left lg:flex-1 order-1 lg:order-2 flex items-center">
-      <img class="shadow-lg mx-auto mh-auto shadow clipImage mb-6  "  src="img/zbout.jpg">
-    </div>
-  </div>
-</section>
-
-<section class="tournamentFeatures bg-black  pt-8 pb-8 md:py-12" id="tournament"> 
-  <div class="relative z-30 mx-auto container text-left">
-      <ul class="py-6 text-white flex justify-between flex-col lg:flex-row px-6 ">
-        <li class="border-4 border-transparent  mr-0 lg:mr-6 ml-0 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3 ">
-          
-          <div>
-          <h3 class="text-3xl pb-4 font-bold uppercase my-auto lg:items-center  pb-0 font-bebas">Why choose CPFF 37?</h3>
-          <p >In an effort to deliver the most explosive technical combat CPFF 37 will feature:</p>
-        </div>
-        
-        </li>
-        <li class="border-t-4 lg:border-4 border-yellow-400  mx-0 lg:mx-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
-          <div>
-            <i class="fas fa-users  text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
-          </div>
-          <div>
-          <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas"> 4-man Tournaments</h3>
-          <p>2 Semi-pro tournaments with 3 x 2 min rounds, no shin protection and 10oz gloves. If there is no clear winner by round 3 a Sudden Death round is triggered.</p>
-        </div>
-        
-        </li>
-        <li class="border-t-4 lg:border-4 border-yellow-400   ml-0 lg:ml-6 p-6 flex justify-between flex-col lg:flex-row items-start lg:items-center lg:w-1/3">
-          <div>
-            <i class="fa-solid fa-medal text-5xl  mr-6 my-auto pb-6 lg:-b-0  "></i>
-          </div>
-          <div>
-            <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas">Champ Vs Champ</h3>
-            <p >Fighters MUST be a Recognised Champion within any organisation to compete in our semi-pro tournaments.</p>
-        </div>
-        
-        </li>
-      </ul>
-
-      <ul class="py-6 text-white flex justify-between flex-col lg:flex-row px-6 ">
-        <li class="border-t-4 lg:border-4 border-yellow-400  ml-0 mr-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
-          <div>
-            <i class="fa-solid fa-hand-fist text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i> <i class="fa-solid fa-boxing-glove"></i>
-          </div>
-          <div>
-          <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas">Professional K-1</h3>
-          <p>Contender pro-fights are fought over 3 gruelling, 3 minute rounds with spinning backfists and knees to the head allowed.</p>
-        </div>
-        
-        </li>
-        <li class="border-t-4 lg:border-4 border-yellow-400  mx-0 lg:mx-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
-          <div>
-            <i class="fa-solid fa-handshake-simple text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
-          </div>
-          <div>
-            <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas"> Submission Grappling</h3>
-            <p>A No-Gi bout featuring a single 10 minute round with standing/ground submissions, throws and takedowns allowed. A winner will be declared by submission only.</p>
-        </div>
-        
-        </li>
-        <li class="border-t-4 lg:border-4 border-yellow-400   ml-0 lg:ml-6 p-6 flex justify-between flex-col lg:flex-row items-start lg:items-center lg:w-1/3">
-          <div>
-            <i class="fa-solid fa-heart-pulse text-5xl  mr-6 my-auto pb-6 lg:-b-0  "></i>
-          </div>
-          <div>
-          <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas"> Exciting Undercard </h3>
-          <p>As usual CPFF will showcase electric bouts from impressive new talent. Including Teen, Semi-pro and amateur super-fights.</p>
-        </div>
-        
-        </li>
-      </ul>
-
-    </div>
-</section>
-
-<section class="Fighters px-6 pt-12" id="fighters">
-  <div class=" mx-auto container text-center h-full p-6 mb-12">
-    <h2 class="text-5xl pb-4 font-bold font-bebas uppercase text-center"><span class="block text-lg text-gray-500 font-normal tracking-widest pb-4">Meet the</span>Fighters</h2>
-
-    <ul class="pt-6 text-white flex justify-center flex-col sm:flex-row flex-wrap" >
-
-      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
-        <div class="relative lg:flex lg:items-stretch overflow-hidden">
-        <div class="z-10 ">
-          <img src="img/fighters/dryden.jpg" class="grayscale">
-        </div>
-        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
-          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Nathan Dryden<span class="block text-sm normal-case font-normal">K1 | Pro | 58kg <br><strong>Contender</strong></span></p>
-        </div>
-        </div> 
-      </li>
-
-      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
-        <div class="relative lg:flex lg:items-stretch overflow-hidden">
-        <div class="z-10 ">
-          <img src="img/fighters/richardson.jpg" class="grayscale">
-        </div>
-        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
-          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Matt Richardson<span class="block text-sm normal-case font-normal">K1 | Semi-Pro | 70kg <br><strong>Contender</strong></span></p>
-        </div>
-        </div> 
-      </li>
-
-      <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
-        <div class="relative lg:flex lg:items-stretch overflow-hidden">
-        <div class="z-10 ">
-          <img src="img/fighters/khan.jpg" class="grayscale">
-        </div>
-        <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
-          <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Aaron khan<span class="block text-sm normal-case font-normal">K1 | Semi-Pro<br><strong>Contender</strong></span></p>
-        </div>
-        </div> 
-      </li>
-    </ul>
-
-      <ul class=" md:pt-6 text-white flex  flex-col sm:flex-row flex-wrap justify-center" >
-        <li class="flex lg:items-stretch  overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0 " >
-          <div class="relative lg:flex lg:items-stretch overflow-hidden">
-            <div class="z-10 ">
-              <img src="img/fighters/kai.jpg" class="grayscale">
-            </div>
-            <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
-              <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Kai Bell<span class="block text-sm normal-case font-normal">K1 | Teen Super-Fight<br><strong>Contender</strong></span></p>
-            </div>
-          </div> 
-        </li>
-      
-        <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
-          <div class="relative lg:flex lg:items-stretch overflow-hidden">
-            <div class="z-10 ">
-              <img src="img/fighters/clark.jpg" class="grayscale">
-            </div>
-            <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
-              <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Harvey Clark<span class="block text-sm normal-case font-normal">K1 | Amateur Super-Fight<br><strong>Contender</strong></span></p>
-            </div>
-          </div> 
-        </li>
-      </ul>
-
-      <h2 class="text-3xl  font-bold uppercase text-center"><span class=" text-center block text-lg text-black font-normal tracking-widest">More fighters to be announced...</h2>
-    </div>
-  </section>
-
-<section class="Tickets px-6 pt-12 pb-6 tinted-image " id="tickets">
-
-  <div class="mx-auto container h-full px-4 md:p-6 ">
-    <h2 class="text-5xl font-bebas pb-4 font-bold uppercase text-center"><span class="font-bebas text-center block text-lg text-black font-normal tracking-widest pb-4">Get your</span>Tickets</h2>
-    <h3 class="text-1xl  text-center"><span cl3 clasass=" text-center block text-lg text-black font-normal tracking-widest"></h3>
-    <ul class="mt-8 mb-12 flex justify-between flex-col md:flex-row" >
-      <li class="mx-0 md:mx-4 w-full bg-white text-black relative  overflow-visible flex flex-col items-stretch transform transition duration-200 ease-in-out hover:-translate-y-2 pb-6 clipDown sm:w-full md:w-2/4 lg:w-3/12  mb-4">
-        <div class=" py-12 pb-6 z-10 h-64">
-          <div class="self-center">
-            <p class="uppercase text-center font-semibold"><i class="fa-regular fa-star-half"></i> Standard Seated <span class="mt-3 block text-5xl font-extrabold">£35 </span></p>
-          </div>
-          <div class="self-center">
-            <p class="normal-case" >
-              <ul class="text-center text-sm pt-6">
-                <li>Entrance</li>
-                <li>Standard seating</li>
-              </ul>
+              </a>
             </p>
           </div>
-        </div>
-        <div class="py-4 w-full mt-8">
-          <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
-            <i class="fa-solid fa-envelope"></i> Enquire
-          </a>
-          </p>
-        </div>
-      </li>
+            
+          <video id="myVideo" webkit-playsinline playsinline autoplay loop muted preload="auto" class="hidden md:block lg:block xl:block absolute z-10 w-auto min-w-full min-h-full max-w-none filter brightness-30 saturate-0">
+            <source src="video/Contendertestsmall.webm" type="video/webm"/>
+            <source src="video/vid.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+          </video>
 
-      <li class="mx-0 md:mx-4 w-full relative text-black bg-white overflow-visible flex items-stretch flex-col  transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12 mb-4  ">
-      <div class="py-12 pb-6 z-10 h-64">
-        <div class="self-center">
-          <p class="uppercase text-center font-semibold"><i class="fa-regular fa-star"></i> Outer Ring Silver <span class="mt-3 block text-5xl font-extrabold">£40</span></p>
+          <div class="absolute z-10 w-auto min-w-full min-h-full max-w-none filter saturate-0 brightness-25 contrast-100  bg-no-repeat bg-cover bg-center sm:block md:hidden lg:hidden xl:hidden" style="background-image: url(img/Fight\ 1.jpg);"></div>
         </div>
-        <div class="self-center">
-          <p class="normal-case" >
-            <ul class="text-center text-sm pt-6">
-              <li>Entrance</li>
-              <li>Middle venue seating</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-        <div class="py-4 w-full mt-8">
-        <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
-          <i class="fa-solid fa-envelope"></i> Enquire
-        </a>
-        </p>
-        </div>
-      </li>
-      <li class="mx-0 md:mx-4 w-full text-black bg-white overflow-visible flex items-stretch flex-col transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12  mb-4 ">
-        <div class="py-12 pb-6 z-10 flex flex-col h-64">
-          <div class="self-center">
-            <p class="uppercase text-center font-semibold"><i class="fa-regular fa-star-half-stroke"></i> Ringside Gold <span class="mt-3 block text-5xl font-extrabold">£50</span></p>
-          </div>
-          <div class="self-center">
-            <p class="normal-case" >
-              <ul class="text-center text-sm pt-6">
-                <li>Entrance</li>
-                <li>Closest row seating at the event</li>
-                <li>Posters Session</li>
-                <li>Talk to the Editors Session</li>
-              </ul>
-            </p>
+        <!--
+    <section class="timer">
+      <div class="relative z-30  mx-auto text-white -mt-28 lg:container text-center uppercase text-center tracking-widest md:px-6 px-0  md:w-full ">
+          <div class=" flex bg-black lg:justify-center justify-between  py-6 mx-auto px-6 border-4 border-yellow-400 lg:w-5/6 xl:w-4/6 2xl:w-3/6 sm:w-full">
+            <div><p id="days" class="lg:text-5xl md:text-4xl text-3xl md:px-6 font-bold ">72</p></div>
+            <div><p  class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal  md:leading-relaxed ">|</p></div>
+            <div><p  id="hours" class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">102</p></div>
+            <div><p class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal   md:leading-relaxed">|</p></div>
+            <div><p id ="minutes"class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">53</p></div>
+            <div><p class="lg:text-4xl md:text-4xl text-3xl md:px-6 font-normal   md:leading-relaxed">|</p></div>
+            <div><p id="seconds"class="lg:text-5xl md:text-4xl text-3xl md:px-4 font-bold  ">20</p></div>
           </div>
         </div>
-        <div class="py-4 w-full mt-8">
-          <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
-            <i class="fa-solid fa-envelope"></i> Enquire
-          </a>
-          </p>
-        </div>
-      </li>
+    </section>
+    --->
 
-      <li class="mx-0 md:mx-4 w-full text-black bg-white overflow-visible flex items-stretch flex-col  transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12  mb-4">
-        <div class="py-12 z-10 h-64">
-          <div class="self-center">
-            <p class="uppercase text-center font-semibold"><i class="fas fa-star"></i> VIP Table of 4 <span class="mt-3 block text-5xl font-extrabold">£60</span></p>
-          </div>
-          <div class="self-center">
-            <p class="normal-case" >
-              <ul class="text-center text-sm pt-6">
-                <li>Entrance</li>
-                <li>Best seats in the house</li>
-                <li>VIP table</li>
-                <li>Seating 4 People £220 (£55 per seat)</li>
-                <li>Only 11 available so book fast!</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-        <div class="py-4 w-full mt-8">
-          <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
-            <i class="fa-solid fa-envelope"></i> Enquire
-          </a>
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <p class="text-normal m-auto block text-center -mt-12 mb-10">Tickets are currently unavailable for general sale, but Email now to enquire about ticket pre-orders and our special <strong>Early bird</strong> discount!</p>
-</section>
-
-<section class="contact bg-gray-100  pt-16 pb-20" id="contact">
-  <h2 class="text-5xl pb-6 font-bold font-bebas uppercase text-center"><span class=" text-center block text-lg text-gray-500 font-normal tracking-widest pb-4">Got a question?</span>Contact us</h2>
-  <div class=" text-left flex flex-col md:flex-row justify-center mx-auto container px-6 pt-3">
-    
-    <div class="bg-black p-12 flex items-center text-white  flex-none md:w-5/12 bg-no-repeat bg-cover bg-center filter grayscale " style=" background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Fight\ 3.jpg);">
-      <div class="flex flex-col">
-        <i class="fas fa-comment-dots text-7xl self-center p-6 border-4 border-white mb-6"></i>
         
-        <p class="self-center text-center  text-sm lg:text-3xl font-bold uppercase ">Got a question<span class="block text-sm normal-case font-normal pt-6">If you've got queries about tickets, fights, sponsorship or any other aspect of the event, why not drop us a message using the form or email us. 
-          <strong class="block lg:text-xl">Email: <a href="mailto:garry@cpff.co.uk" class="underline"><span class="font-normal">garry@cpff.co.uk </span></a></strong></span></p>
-          <ul class="flex justify-center mx-auto pt-3">
-            <a rel="noopener noreferrer" href="https://m.facebook.com/contenderpromotionsfightfederation" target="_blank" class="hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-facebook-square"></i></li></a>
-            <a rel="noopener noreferrer" href="https://www.instagram.com/contenderpromotions/?hl=en" target="_blank" class="hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-instagram"></i></li></a>
+    <section class="About" id="about">
+      <div class="relative z-30  mx-auto mt-16 mb-12  container  text-center  flex items-center flex-col lg:flex-row px-6 border-white">
+        <div class="text-left text-normal lg:flex-1 lg:pr-20 pb-6 order-2 lg:order-1">
+          <h2 class="text-3xl md:text-5xl pb-4 font-bold uppercase font-bebas"><span class="block text-lg text-gray-500 font-normal tracking-widest pb-4">About</span>Contender Promotions Fight Federation</h2>
+          <p class="text-gray-700 ">The most exciting kickboxing event in the UK, CPFF, returns November 27th. One night, one explosive <strong>champion-vs-champion 4-man semi-pro tournament</strong> with a £1000 winner-takes-all prize. Every fighter participating will be a UK title holder so you’re sure to see some of the most explosive, bone-crunching combat action. </p> 
+          <p class="text-gray-700 mt-4">Our home-grown talent lights up this electric K-1 spectacle with 6 Contender combatants entering the ring. Headlining the show are our pro fighters including a main event featuring 58 kg superstar <strong>Nathan Dryden</strong> as well as a heavyweight co-main event shining the spotlight on the phenomenal <strong>Kay Szoma</strong>. And, if that's not enough Kickboxing action then we also have <strong>Matt Richardson</strong> battling for glory in the tournament, some incredible amateur super-fights and an exciting undercard.</p>
+          <p class="text-gray-700 mt-4 ">Finally, for the first time in CPFF history we're showcasing high-level grappling with a  submission-victory-only bout.</p>
+          <!--
+          <ul class="pt-6 text-black">
+            <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+            <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+            <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+            <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li>
+            <li class="py-1"><i class="fas fa-square-full pr-2 text-xs text-gray-500"></i> Something goes here</li
           </ul>
+          --->
+          <div class="mt-8 flex flex-col md:flex-row">
+            <a href="https://www.leapfrogfighttv.com/"><img class="w-32" src="img/leapfrog.png"></a>
+            <p class=" mt-4 text-sm md:ml-2 text-gray-700">PPV via <strong><a class="underline" href="https://www.leapfrogfighttv.com/" target="_blank" rel="">Leapfrog Fight TV</a></strong>, <a class="font-bold underline" href="mailto:garry@cpff.co.uk">email</a> for info.</p>
+          </div>
+        </div>
+        <div class="text-left lg:flex-1 order-1 lg:order-2 flex items-center">
+          <img class="shadow-lg mx-auto mh-auto shadow clipImage mb-6  "  src="img/zbout.jpg">
+        </div>
       </div>
-    </div>
-    <div class="bg-white p-12 flex-grow" id="contactTop">
-      <div id="errorMsg"></div>
-      <form class="self-stretch overflow-hidden" action="code/contact_code.php" method="POST" id="cpffContact">
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3  md:mb-0">
+    </section>
 
-            <p class="text-xs mb-3">* Required</p>
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
-              Full name*
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " id="name" name="name" type="text" placeholder="John Smith" maxlength="255">
+    <section class="tournamentFeatures bg-black  pt-8 pb-8 md:py-12" id="tournament"> 
+      <div class="relative z-30 mx-auto container text-left">
+          <ul class="py-6 text-white flex justify-between flex-col lg:flex-row px-6 ">
+            <li class="border-4 border-transparent  mr-0 lg:mr-6 ml-0 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3 ">
+              <div>
+                <h3 class="text-3xl pb-4 font-bold uppercase my-auto lg:items-center  pb-0 font-bebas">Why choose CPFF 37?</h3>
+                <p >In an effort to deliver the most explosive technical combat CPFF 37 will feature:</p>
+              </div>
+            </li>
+            <li class="border-t-4 lg:border-4 border-yellow-400  mx-0 lg:mx-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
+              <div>
+                <i class="fas fa-users  text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
+              </div>
+              <div>
+                <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas"> 4-man Tournament</h3>
+                <p>Semi-pro tournament with 3 x 2 min rounds, no shin protection and 10oz gloves. If there is no clear winner by round 3 a Sudden Death round is triggered.</p>
+              </div>
+            </li>
+            <li class="border-t-4 lg:border-4 border-yellow-400 ml-0 lg:ml-6 p-6 flex justify-between flex-col lg:flex-row items-start lg:items-center lg:w-1/3">
+              <div>
+                <i class="fa-solid fa-medal text-5xl  mr-6 my-auto pb-6 lg:-b-0  "></i>
+              </div>
+              <div>
+                <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas">Champ Vs Champ</h3>
+                <p >Fighters MUST be a Recognised Champion within any organisation to compete in our semi-pro tournament.</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="py-6 text-white flex justify-between flex-col lg:flex-row px-6 ">
+            <li class="border-t-4 lg:border-4 border-yellow-400  ml-0 mr-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
+              <div>
+                <i class="fa-solid fa-hand-fist text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i> <i class="fa-solid fa-boxing-glove"></i>
+              </div>
+              <div>
+                <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas">Professional K-1</h3>
+                <p>Contender pro-fights are fought over 3 gruelling 3 minute rounds with spinning backfists and knees to the head allowed.</p>
+              </div>
+            </li>
+            <li class="border-t-4 lg:border-4 border-yellow-400  mx-0 lg:mx-6 p-6 flex justify-between flex-col lg:flex-row lg:items-center items-start lg:w-1/3">
+              <div>
+                <i class="fa-solid fa-handshake-simple text-5xl  mr-6 my-auto pb-6 lg:-b-0 "></i>
+              </div>
+              <div>
+                <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas"> Submission Grappling</h3>
+                <p>A No-Gi bout featuring a single 10 minute round with standing/ground submissions, throws and takedowns allowed. A winner will be declared by submission only.</p>
+              </div>
+            </li>
+            <li class="border-t-4 lg:border-4 border-yellow-400   ml-0 lg:ml-6 p-6 flex justify-between flex-col lg:flex-row items-start lg:items-center lg:w-1/3">
+              <div>
+                <i class="fa-solid fa-heart-pulse text-5xl  mr-6 my-auto pb-6 lg:-b-0  "></i>
+              </div>
+              <div>
+                <h3 class="text-3xl pb-4 font-bold uppercase my-auto items-center font-bebas"> Exciting Undercard </h3>
+                <p>As usual CPFF will showcase electric bouts from impressive new talent. Including Teen, Semi-pro and amateur super-fights.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="Fighters px-6 pt-12" id="fighters">
+      <div class=" mx-auto container text-center h-full p-6 mb-12">
+        <h2 class="text-5xl pb-4 font-bold font-bebas uppercase text-center"><span class="block text-lg text-gray-500 font-normal tracking-widest pb-4">Meet the</span>Fighters</h2>
+        <ul class="pt-6 text-white flex justify-center flex-col sm:flex-row flex-wrap" >
+          <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+            <div class="relative lg:flex lg:items-stretch overflow-hidden">
+            <div class="z-10 ">
+              <img src="img/fighters/dryden.jpg" class="grayscale">
+            </div>
+            <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+              <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Nathan Dryden<span class="block text-sm normal-case font-normal">K1 | Pro | 58kg <br><strong>Contender</strong></span></p>
+            </div>
+            </div> 
+          </li>
+
+          <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+            <div class="relative lg:flex lg:items-stretch overflow-hidden">
+              <div class="z-10 ">
+                <img src="img/fighters/richardson.jpg" class="grayscale">
+              </div>
+              <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+                <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Matt Richardson<span class="block text-sm normal-case font-normal">K1 | Semi-Pro | 70kg <br><strong>Contender</strong></span></p>
+              </div>
+            </div> 
+          </li>
+
+          <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+            <div class="relative lg:flex lg:items-stretch overflow-hidden">
+              <div class="z-10 ">
+                <img src="img/fighters/khan.jpg" class="grayscale">
+              </div>
+              <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+                <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Aaron khan<span class="block text-sm normal-case font-normal">K1 | Semi-Pro<br><strong>Contender</strong></span></p>
+              </div>
+            </div> 
+          </li>
+        </ul>
+
+          <ul class=" md:pt-6 text-white flex  flex-col sm:flex-row flex-wrap justify-center" >
+            <li class="flex lg:items-stretch  overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0 " >
+              <div class="relative lg:flex lg:items-stretch overflow-hidden">
+                <div class="z-10 ">
+                  <img src="img/fighters/kai.jpg" class="grayscale">
+                </div>
+                <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+                  <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Kai Bell<span class="block text-sm normal-case font-normal">K1 | Teen Super-Fight<br><strong>Contender</strong></span></p>
+                </div>
+              </div> 
+            </li>
+          
+            <li class="flex lg:items-stretch overflow-hidden clipImage mb-6 md:w-2/4  lg:w-1/4 xl:w-1/4 md:px-6 p-0" >
+              <div class="relative lg:flex lg:items-stretch overflow-hidden">
+                <div class="z-10 ">
+                  <img src="img/fighters/clark.jpg" class="grayscale">
+                </div>
+                <div class="opacity-1 sm:block lg:opacity-0 lg:absolute lg:top-0 md:relative sm:relative  lg:z-30 transition duration-50 ease-in-out bg-black border-t-4 lg:border-b-4 border-yellow-400  hover:bg-opacity-90 ml-0 hover:opacity-100 transform hover:-translate-y-10 mx-3 p-6 w-full lg:h-full lg:flex lg:items-center">
+                  <p class="text-center lg:h-auto mx-auto text-sm lg:text-lg font-bold uppercase">Harvey Clark<span class="block text-sm normal-case font-normal">K1 | Amateur Super-Fight<br><strong>Contender</strong></span></p>
+                </div>
+              </div> 
+            </li>
+          </ul>
+          <h2 class="text-3xl  font-bold uppercase text-center"><span class=" text-center block text-lg text-black font-normal tracking-widest">More fighters to be announced...</h2>
+        </div>
+      </section>
+
+      <section class="Tickets px-6 pt-12 pb-6 tinted-image " id="tickets">
+        <div class="mx-auto container h-full px-4 md:p-6 ">
+          <h2 class="text-5xl font-bebas pb-4 font-bold uppercase text-center"><span class="font-bebas text-center block text-lg text-black font-normal tracking-widest pb-4">Get your</span>Tickets</h2>
+          <p class="text-normal m-auto block text-center mb-10">Tickets are currently unavailable for general sale, but Email now to enquire about ticket pre-orders and our special <strong>Early bird</strong> discount!</p>
+          <ul class="mt-8 mb-12 flex justify-between flex-col md:flex-row" >
+            <li class="mx-0 md:mx-4 w-full bg-white text-black relative  overflow-visible flex flex-col items-stretch transform transition duration-200 ease-in-out hover:-translate-y-2 pb-6 clipDown sm:w-full md:w-2/4 lg:w-3/12  mb-4">
+              <div class=" py-12 pb-6 z-10 h-64">
+                <div class="self-center">
+                  <p class="uppercase text-center font-semibold"><i class="fa-regular fa-star-half"></i> Standard Seated <span class="mt-3 block text-5xl font-extrabold">£35 </span></p>
+                </div>
+                <div class="self-center">
+                  <p class="normal-case pt-8 px-6 text-center text-sm">
+                    Get involved in the action with our entry level seating, located towards the outer area of the venue. However, you will still find yourself caught up in the atmosphere as the fighters showcase their skills.
+                    <!--
+                    <ul class="text-center text-sm pt-6">
+                      <li>Entrance</li>
+                      <li>Standard seating</li>
+                    </ul>--->
+                  </p>
+                </div>
+              </div>
+              <div class="py-4 w-full mt-8">
+                <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
+                  <i class="fa-solid fa-envelope"></i> Enquire
+                </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="mx-0 md:mx-4 w-full relative text-black bg-white overflow-visible flex items-stretch flex-col  transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12 mb-4  ">
+            <div class="py-12 pb-6 z-10 h-64">
+              <div class="self-center">
+                <p class="uppercase text-center font-semibold"><i class="fa-regular fa-star"></i> Outer Ring Silver <span class="mt-3 block text-5xl font-extrabold">£40</span></p>
+              </div>
+              <div class="self-center">
+                <p class="normal-case pt-8 px-6 text-center text-sm">
+                  Get closer to the action with seats situated towards the middle of the venue. Experience the event in the centre of the crowd.
+                  <!---<ul class="text-center text-sm pt-6">
+                    <li>Entrance</li>
+                    <li>Middle venue seating</li>
+                  </ul>--->
+                </p>
+              </div>
+            </div>
+              <div class="py-4 w-full mt-8">
+              <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
+                <i class="fa-solid fa-envelope"></i> Enquire
+              </a>
+              </p>
+              </div>
+            </li>
+            <li class="mx-0 md:mx-4 w-full text-black bg-white overflow-visible flex items-stretch flex-col transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12  mb-4 ">
+              <div class="py-12 pb-6 z-10 flex flex-col h-64">
+                <div class="self-center">
+                  <p class="uppercase text-center font-semibold"><i class="fa-regular fa-star-half-stroke"></i> Ringside Gold <span class="mt-3 block text-5xl font-extrabold">£50</span></p>
+                </div>
+                <div class="self-center">
+                  <p class="normal-case pt-8 px-6 text-center text-sm">
+                    Gold level tickets get you the closest rowed seating in the venue. Offering an intimiate view of all of the exciting action.
+                    <!---<ul class="text-center text-sm pt-6">
+                      <li>Entrance</li>
+                      <li>Closest row seating at the event</li>
+                      <li>Posters Session</li>
+                      <li>Talk to the Editors Session</li>
+                    </ul>--->
+                  </p>
+                </div>
+              </div>
+              <div class="py-4 w-full mt-8">
+                <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
+                  <i class="fa-solid fa-envelope"></i> Enquire
+                </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="mx-0 md:mx-4 w-full text-black bg-white overflow-visible flex items-stretch flex-col  transform transition duration-200 ease-in-out hover:-translate-y-2  pb-6  relative clipDown sm:w-full md:w-2/4 lg:w-3/12  mb-4">
+              <div class="py-12 z-10 h-64">
+                <div class="self-center">
+                  <p class="uppercase text-center font-semibold"><i class="fas fa-star"></i> VIP Table of 4 <span class="mt-3 block text-5xl font-extrabold">£220</span></p>
+                </div>
+                <div class="self-center">
+                  <p class="normal-case pt-8 px-6 text-center text-sm">
+                    <!---
+                    <ul class="text-center text-sm pt-6">
+                      <li>Entrance</li>
+                      <li>Best seats in the house</li>
+                      <li>VIP table</li>
+                      <li>Seating 4 People £220 (£55 per seat)</li>
+                      <li>Only 11 available so book fast!</li>
+                    </ul>--->
+                    For £220 (£55 per seat) you get access to an exlusive VIP tables that allows 4 guests to sit ringside, this is our only allocated seating. Only 11 available so get your tickets fast! 
+                  </p>
+                </div>
+              </div>
+              <div class="py-4 w-full mt-8">
+                <p class="text-center border-t border-yellow-400"><a href="mailto:garry@cpff.co.uk" class="inline-block text-base px-4 md:px-6 bg-yellow-400 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold">
+                  <i class="fa-solid fa-envelope"></i> Enquire
+                </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+          <h2 class="text-5xl font-bebas pb-4 font-bold uppercase text-center"><span class="font-bebas text-center block text-lg text-black font-normal tracking-widest pb-4">Stream Live </span>Pay Per View</h2>
+          <div class="p-4 text-center pb-12">
+            <a href="https://www.leapfrogfighttv.com/"><img class="w-32 mx-auto block" src="img/leapfrog.png" ></a>
+            <p class=" mt-4 text-normal md:ml-4"> PPV via <strong><a class="underline" href="https://www.leapfrogfighttv.com/" target="_blank" rel="">Leapfrog Fight TV</a></strong> available soon. For info email <a class="font-bold underline" href="mailto:garry@cpff.co.uk">garry@cpff.co.uk</a></p>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="mail">
-              Email*
-            </label>
-            <input type="email" maxlength="255" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " id="mail" name="mail" placeholder="email@mail.com">
+      </section>
+
+      <section class="contact bg-gray-100  pt-16 pb-20" id="contact">
+        <h2 class="text-5xl pb-6 font-bold font-bebas uppercase text-center"><span class=" text-center block text-lg text-gray-500 font-normal tracking-widest pb-4">Got a question?</span>Contact us</h2>
+        <div class=" text-left flex flex-col md:flex-row justify-center mx-auto container px-6 pt-3">
+          <div class="bg-black p-12 flex items-center text-white  flex-none md:w-5/12 bg-no-repeat bg-cover bg-center filter grayscale " style=" background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Fight\ 3.jpg);">
+            <div class="flex flex-col">
+              <i class="fas fa-comment-dots text-7xl self-center p-6 border-4 border-white mb-6"></i>
+              <p class="self-center text-center text-sm lg:text-3xl font-bold uppercase "><span class="font-bebas">Got a question?</span><span class="block text-sm normal-case font-normal pt-6">If you've got queries about tickets, fights, sponsorship or any other aspect of the event, why not drop us a message using the form or email us. 
+                <strong class="block lg:text-xl">Email: <a href="mailto:garry@cpff.co.uk" class="underline"><span class="font-normal">garry@cpff.co.uk </span></a></strong></span></p>
+                <ul class="flex justify-center mx-auto pt-3">
+                  <a rel="noopener noreferrer" href="https://m.facebook.com/contenderpromotionsfightfederation" target="_blank" class="hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-facebook-square"></i></li></a>
+                  <a rel="noopener noreferrer" href="https://www.instagram.com/contenderpromotions/?hl=en" target="_blank" class="hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-instagram"></i></li></a>
+                </ul>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-2">
-          <div class="w-full  px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="msg">
-              Message*
-            </label>
-            <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " placeholder="Type your message" id="msg" name="msg" rows="4" cols="50" maxlength="500"></textarea>
+          <div class="bg-white p-12 flex-grow" id="contactTop">
+            <div id="errorMsg"></div>
+            <form class="self-stretch overflow-hidden" action="code/contact_code.php" method="POST" id="cpffContact">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3  md:mb-0">
+                  <p class="text-xs mb-3">* Required</p>
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                    Full name*
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " id="name" name="name" type="text" placeholder="John Smith" maxlength="255">
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="mail">
+                    Email*
+                  </label>
+                  <input type="email" maxlength="255" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " id="mail" name="mail" placeholder="email@mail.com">
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="w-full  px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="msg">
+                    Message*
+                  </label>
+                  <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " placeholder="Type your message" id="msg" name="msg" rows="4" cols="50" maxlength="500"></textarea>
+                </div>
+                <label class="invisible hidden uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="alias">
+                  Message*
+                </label>
+                <textarea class="appearance-none invisible hidden w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " placeholder="alias name" name="alias" rows="4" cols="50" maxlength="255"></textarea>
+                <p class="float-right">
+                  <button type="submit" class="inline-block text-base px-4 md:px-6 bg-yellow-400 ml-3 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold" name="submit" id="submit">
+                    Send Message
+                  </button>
+                </p>
+              </div>
+            </form>
+            </div>
           </div>
-          <label class="invisible hidden uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="alias">
-            Message*
-          </label>
-          <textarea class="appearance-none invisible hidden w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white " placeholder="alias name" name="alias" rows="4" cols="50" maxlength="255"></textarea>
-          <p class="float-right">
-            <button type="submit" class="inline-block text-base px-4 md:px-6 bg-yellow-400 ml-3 mt-6 py-2 text-black hover:bg-yellow-400 uppercase font-bold" name="submit" id="submit">
-              Send Message
-            </button>
+      </section>
+
+      <section class="sponsors px-6 pt-12 pb-6 bg-white" id="sponsors">
+      <div class=" mx-auto container h-full p-6">
+        <h2 class="text-5xl pb-4 font-bold font-bebas uppercase text-center"><span class=" text-center block text-lg text-gray-500 font-normal tracking-widest pb-4">Our event</span>Sponsors</h2>
+        <ul class="text-white flex justify-center flex-row pt-6 flex-wrap">
+          <a target="_blank" rel="noopener noreferrer"  href="http://jabcrosshook.co.uk/" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
+            <li class=" border border-gray-100 text-black flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2">
+            <img src="img/sponsors/jabcrosshook.png" class="filter grayscale p-6 hover:bg-gray-100" alt="Jab Cross Hook, a combat card game logo">
+            </li>
+          </a>
+          <a target="_blank" rel="noopener noreferrer"  href="https://notoriousfightgear.com/" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
+            <li class=" border border-gray-100 text-black  flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2  ">
+            <img src="img/sponsors/notorious.png" class="filter grayscale p-6 hover:bg-gray-100" alt="notorious logo">
+            </li>
+          </a> 
+        </ul>
+        <p class="text-normal m-auto block text-center mb-8 text-gray-500 ">Interested in becoming a sponsor? Email us at <a class="underline" href="mailto:garry@cpff.co.uk">garry@cpff.co.uk</a> or use the form above to ask about our sponsorship tiers.</div>
+      </div>
+    </section>
+
+    <footer class=" pt-16 pb-12 bg-black text-white relative text-center">
+      <div class="px-6 container mx-auto">
+        <div class="text-white  md:flex-row ">
+          <div class=" px-6">
+          <p class="text-xs uppercase font-normal">
+            <span class="text-m font-bebas tracking-widest ">&copy; Contender Promotions Fight Federation 2022 </span>
+              <span class="normal-case font-medium pt-3 block">The Basement<br>
+              Stockton-on-Tees<br>
+              TS18 3DR <br>
+              <a href="mailto:garry@cpff.co.uk" class="underline"><i class="far fa-envelope mr-1"></i> garry@cpff.co.uk</a> <br>
+              <!---<i class="fas fa-phone-alt mr-1"></i> 07825184659<br>--->
+              </span>
           </p>
         </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section class="sponsors px-6 pt-12 pb-6 bg-white" id="sponsors">
-  <div class=" mx-auto container h-full p-6">
-    <h2 class="text-5xl pb-4 font-bold font-bebas uppercase text-center"><span class=" text-center block text-lg text-gray-500 font-normal tracking-widest pb-4">Our event</span>Sponsors</h2>
-
-    <ul class="text-white flex justify-center flex-row pt-6 flex-wrap">
-
-      <a target="_blank" rel="noopener noreferrer"  href="http://jabcrosshook.co.uk/" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
-        <li class=" border border-gray-100 text-black flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2">
-        <img src="img/sponsors/jabcrosshook.png" class="filter grayscale p-6 hover:bg-gray-100" alt="Jab Cross Hook, a combat card game logo">
-        </li>
-      </a>
-
-      <a target="_blank" rel="noopener noreferrer"  href="https://notoriousfightgear.com/" class="lg:w-1/6 xl:w-1/6 md:w-1/4 pb-6 sm:w-2/4">
-        <li class=" border border-gray-100 text-black  flex items-stretch mx-6  transform transition duration-200 ease-in-out hover:-translate-y-2  ">
-        <img src="img/sponsors/notorious.png" class="filter grayscale p-6 hover:bg-gray-100" alt="notorious logo">
-        </li>
-      </a> 
-
-
-</ul>
-
-<p class="text-normal m-auto block text-center mb-8 text-gray-500 ">Interested in becoming a sponsor? Email us at <a class="underline" href="mailto:garry@cpff.co.uk">garry@cpff.co.uk</a> or use the form above to ask about our sponsorship tiers.</div>
-    </div>
-</section>
-
-<footer class=" pt-16 pb-12 bg-black text-white relative text-center">
-  <div class="px-6 container mx-auto">
-  <div class="text-white  md:flex-row ">
-    <div class=" px-6">
-    <p class="text-xs font-semibold uppercase ">&copy; Contender Promotions Fight Federation 2021 <span class="normal-case font-medium pt-3 block">The Basement<br>
-      Stockton-on-Tees<br>
-      TS18 3DR <br>
-      <a href="mailto:garry@cpff.co.uk" class="underline"><i class="far fa-envelope mr-1"></i> garry@cpff.co.uk</a> <br>
-      <!---<i class="fas fa-phone-alt mr-1"></i> 07825184659<br>--->
-    </span>
-      </p>
-    
-  </div>
-  <div class="px-6">
-    <ul class="flex justify-center mx-auto pt-3">
-      <a target="_blank" rel="noopener noreferrer" href="https://m.facebook.com/contenderpromotionsfightfederation" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-facebook-square"></i></li></a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/contenderpromotions/?hl=en" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-instagram"></i></li></a>
-    </ul>
-  </div>
-  </div>
-  </div>
- </footer>
-
-
-</main>
-<script src="js/menu.js"></script>
-<script src="js/countdown.js"></script>
-<script src="js/validation.js"></script>
-
-</body>
+        <div class="px-6">
+          <ul class="flex justify-center mx-auto pt-3">
+            <a target="_blank" rel="noopener noreferrer" href="https://m.facebook.com/contenderpromotionsfightfederation" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-facebook-square"></i></li></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/contenderpromotions/?hl=en" class=" hover:bg-gray-700 mr-1 px-3 py-2"><li class="self-center"><i class="fab fa-instagram"></i></li></a>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </footer>
+    </main>
+  <script src="js/menu.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/validation.js"></script>
+  </body>
 </html>
